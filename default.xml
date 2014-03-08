@@ -473,6 +473,8 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spz" revision="refs/heads/cm-11.0" />
   <!-- Use Torch mod (won't shutdown when screen turns off) -->
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="refs/heads/cm-11.0" />
+  <!-- Use camera with compatibility for htc bravo  -->
+  <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
   <!-- Switch to more recent toolchain / GCC v4.7.4 -->  
   <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.7.4" name="Mustaavalkosta/android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="github" revision="master" />
 </manifest>

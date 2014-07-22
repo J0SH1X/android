@@ -528,7 +528,7 @@
 
   <!-- Device specific projects -->
 
-  <project path="vendor/mk" name="MoKee/android_vendor_mk" remote="spz" revision="refs/heads/mk-kk" />
+  <project path="vendor/mk" name="android_vendor_mk" remote="spz" revision="refs/heads/mk-kk" />
   
   <!-- Use devicetrees and kernel forked from Evervolv projects -->
   <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/mk-kk" />
@@ -548,7 +548,7 @@
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="refs/heads/mk-kk" />
   <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="refs/heads/mk-kk" />
   <!-- Use forked Settings with Trackball wake -->
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spz" revision="refs/heads/mk.kk" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spz" revision="refs/heads/mk-kk" />
   <!-- Use Torch mod (won't shutdown when screen turns off) -->
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="refs/heads/mk-kk" />
 

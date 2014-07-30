@@ -499,11 +499,11 @@
   <!-- Device specific projects /-->
   
   <!-- Use devicetrees and kernel forked from Evervolv projects -->
-  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/aosb-cm-11" />
-  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="refs/heads/cm-11.0" />
+  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="aosb" />
+  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="cm-11.0" />
   
   <!-- Use kernel 2.6.38 based off of Evervolv's qsd8k and Eternity-Kernel -->
-  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/carbonized" />
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="utopian" />
   
   <!-- Use htc vendor blobs with latest Adreno libs from AU_LINUX_ANDROID_JB_VANILLA_04.02.02.060.053 -->
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="refs/heads/kitkat" /> 
@@ -514,7 +514,7 @@
   <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" revision="refs/heads/kitkat" />  
   
   <!-- Use forked cm vendor project -->
-  <project path="vendor/cm" name="android_vendor_cm" remote="spz" revision="refs/heads/aosb-cm-11" />
+  <project path="vendor/cm" name="android_vendor_cm" remote="spz" revision="aosb" />
   
   <!-- Use forked cm projects with required changes for htc bravo -->
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="refs/heads/cm-11.0" />

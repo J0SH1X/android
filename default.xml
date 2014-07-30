@@ -20,6 +20,9 @@
   <remote  name="spz"
            fetch="git://github.com/spezi77/" />
 
+  <remote  name="gh"
+           fetch="https://github.com/" />
+
   <remote  name="ChameleonOS"
            fetch="https://github.com/ChameleonOS"
            review="review.chameleonos.org" />
@@ -50,7 +53,6 @@
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="AOSB" revision="master" />
   <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="AOSB" revision="master" />
   <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="AOSB" revision="master" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="AOSB" revision="master" />
   <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="AOSB" revision="master" />
   <project path="packages/apps/EOSWeather" name="android_packages_apps_EOSWeather" remote="AOSB" revision="kk4.4" />
   <!-- Android Open Source Blitz End -->
@@ -461,8 +463,6 @@
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" />
   <project path="packages/apps/VoicePlus" name="CyanogenMod/android_packages_apps_VoicePlus" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
-  <project path="packages/inputmethods/OpenWnn" name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
-  <project path="packages/inputmethods/PinyinIME" name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
   <project path="packages/providers/ApplicationsProvider" name="CyanogenMod/android_packages_providers_ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="CyanogenMod/android_packages_providers_CalendarProvider" />
   <project path="packages/providers/PartnerBookmarksProvider" name="CyanogenMod/android_packages_providers_PartnerBookmarksProvider" />
@@ -527,9 +527,6 @@
     
   <!-- Use Torch mod (won't shutdown when screen turns off) -->
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="refs/heads/cm-11.0" />
-  
-  <!-- Sabermod arm-eabi-4.10 toolchain -->
-  <project path="prebuilt/linux-x86/toolchain/sm-arm-eabi-4.10" name="UBERUTILS/arm-eabi-4.10" remote="github" revision="master" />
    
   <!-- Use camera with compatibility for htc bravo  -->
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
@@ -538,5 +535,9 @@
   <project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
-    
+
+  <!-- Linaro toolchains -->
+  <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="gh" revision="refs/heads/kitkat" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="JustArchi/Linaro" remote="gh" revision="refs/heads/4.8-androideabi" /> 
+
 </manifest>

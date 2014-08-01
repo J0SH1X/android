@@ -32,12 +32,11 @@
 
 
   <!-- Android Open Source Blitz Start -->
-  <project path="build" name="android_build" remote="AOSB" revision="master" >
+  <project path="build" name="android_build" remote="spz" revision="aosb" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path="android" name="android" remote="AOSB" revision="master" />
-  <project path="bionic" name="android_bionic" remote="AOSB" revision="master" />
   <project path="frameworks/av" name="android_frameworks_av" remote="AOSB" revision="master" />
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="AOSB" revision="master" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="AOSB" revision="master" />
@@ -144,10 +143,6 @@
   <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" groups="pdk,darwin,mips" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="darwin,x86" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="linux" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -183,7 +178,6 @@
 
   <!-- CyanogenMod Start -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="art" name="CyanogenMod/android_art" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="bootable/recovery-cm" name="CyanogenMod/android_bootable_recovery-cm" />
@@ -517,7 +511,8 @@
   <!-- Use forked cm vendor project -->
   <project path="vendor/cm" name="android_vendor_cm" remote="spz" revision="aosb" />
   
-  <!-- Use forked cm projects with required changes for htc bravo -->
+  <!-- Use forked projects with required changes for htc bravo -->
+  <project path="art" name="android_art" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="external/iproute2" name="android_external_iproute2" remote="spz" revision="refs/heads/cm-11.0" />
@@ -529,13 +524,16 @@
   <!-- Use Torch mod (won't shutdown when screen turns off) -->
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="refs/heads/cm-11.0" />
    
-  <!-- Use camera with compatibility for htc bravo  -->
+  <!-- Use the following packages to ensure compatibility with htc bravo  -->
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
   
   <project path="packages/providers/DownloadProvider" name="CyanogenMod/android_packages_providers_DownloadProvider" />
   <project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
+
+  <!-- Switch to PurityROM'S bionic project for increased performance -->
+  <project path="bionic" name="KitKatPurity/platform_bionic" remote="gh" revision="refs/heads/kitkat" />
 
   <!-- Linaro toolchains -->
   <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="gh" revision="refs/heads/kitkat" />

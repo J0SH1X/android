@@ -32,7 +32,7 @@
 
 
   <!-- Android Open Source Blitz Start -->
-  <project path="build" name="android_build" remote="AOSB" revision="master" >
+  <project path="build" name="android_build" remote="spz" revision="aosb" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -183,7 +183,6 @@
 
   <!-- CyanogenMod Start -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="art" name="CyanogenMod/android_art" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="bootable/recovery-cm" name="CyanogenMod/android_bootable_recovery-cm" />
@@ -518,6 +517,7 @@
   <project path="vendor/cm" name="android_vendor_cm" remote="spz" revision="aosb" />
   
   <!-- Use forked cm projects with required changes for htc bravo -->
+  <project path="art" name="android_art" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="external/iproute2" name="android_external_iproute2" remote="spz" revision="refs/heads/cm-11.0" />

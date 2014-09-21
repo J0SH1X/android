@@ -480,7 +480,7 @@
   <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="refs/heads/cm-11.0" />
   <!-- Use Carbonized kernel -->
-  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/carbonized" />
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/utopian" />
   <!-- Use htc vendor blobs with latest Adreno libs from AU_LINUX_ANDROID_JB_VANILLA_04.02.02.060.053 -->
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="refs/heads/kitkat" /> 
   <!--  Use legacy projects maintained by Evervolv -->
@@ -505,8 +505,7 @@
   <!-- Switch bionic to Purity for increased performance -->
   <project path="bionic" name="KitKatPurity/platform_bionic" remote="github" revision="kitkat" />  
   
-<!-- Linaro toolchains -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="JustArchi/Linaro" remote="github" revision="4.8-androideabi" />
+<!-- Linaro toolchain -->
+  <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
 
 </manifest>

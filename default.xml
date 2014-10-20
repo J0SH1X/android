@@ -452,7 +452,6 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="pdk,tools" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
-  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
@@ -476,36 +475,45 @@
   <project path="build" name="android_build" groups="pdk" remote="spz" revision="refs/heads/cm-11.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  
   <!-- Use devicetrees and kernel forked from Evervolv projects -->
   <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="refs/heads/cm-11.0" />
-  <!-- Use Carbonized kernel -->
-  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/utopian" />
+  
+  <!-- Use kernel 3.0 wip -->
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/3.0-wip-testing" />
+  <!--<project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/utopian" />-->
+  
   <!-- Use htc vendor blobs with latest Adreno libs from AU_LINUX_ANDROID_JB_VANILLA_04.02.02.060.053 -->
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="refs/heads/kitkat" /> 
+  
   <!--  Use legacy projects maintained by Evervolv -->
   <project path="hardware/qcom/audio-legacy" name="Evervolv/android_hardware_qcom_audio-legacy" revision="refs/heads/kitkat" />
-  <project path="hardware/qcom/display-legacy" name="Evervolv/android_hardware_qcom_display-legacy" revision="refs/heads/kitkat" />
   <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" revision="refs/heads/kitkat" />  
-  <!-- Use forked cm vendor project -->
-  <project path="vendor/cm" name="android_vendor_cm" remote="spz" revision="refs/heads/cm-11.0" />
+  
   <!-- Use forked cm projects with required changes for htc bravo -->
+  <project path="vendor/cm" name="android_vendor_cm" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="frameworks/base" name="android_frameworks_base" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="external/iproute2" name="android_external_iproute2" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="refs/heads/cm-11.0" />
+  
   <!-- Use forked Settings with Trackball wake -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spz" revision="refs/heads/cm-11.0" />
+  
   <!-- Use Torch mod (won't shutdown when screen turns off) -->
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="refs/heads/cm-11.0" />
+  
   <!-- Use camera with compatibility for htc bravo  -->
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
   
-  <!-- Switch bionic to Purity for increased performance -->
-  <project path="bionic" name="KitKatPurity/platform_bionic" remote="github" revision="kitkat" />  
+  <!-- Forked projects with fixes for building with k3 -->
+  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="spz" revision="kitkat-k3-testing" />
+  <project path="bionic" name="platform_bionic" remote="spz" revision="kitkat-k3-testing" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="spz" revision="kitkat-k3-testing" />
   
-<!-- Linaro toolchain -->
+  <!-- Linaro toolchain -->
   <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
 
 </manifest>

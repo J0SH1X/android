@@ -452,6 +452,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="pdk,tools" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
+  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
@@ -476,19 +477,20 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   
-  <!-- Use devicetrees and kernel forked from Evervolv projects -->
+  <!-- Devicetrees forked from Evervolv (Guys, you rock! many thanks!) -->
   <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/cm-11.0" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="refs/heads/cm-11.0" />
   
-  <!-- Use kernel 3.0 wip -->
+  <!-- Use kernel 3.0 wip (Kudos to nikez!) -->
   <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/3.0-wip-testing" />
   <!--<project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/utopian" />-->
   
   <!-- Use htc vendor blobs with latest Adreno libs from AU_LINUX_ANDROID_JB_VANILLA_04.02.02.060.053 -->
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="refs/heads/kitkat" /> 
   
-  <!--  Use legacy projects maintained by Evervolv -->
+  <!--  Use legacy projects maintained by Evervolv (thanks!) -->
   <project path="hardware/qcom/audio-legacy" name="Evervolv/android_hardware_qcom_audio-legacy" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/display-legacy" name="Evervolv/android_hardware_qcom_display-legacy" remote="github" revision="refs/heads/kitkat" />  
   <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" revision="refs/heads/kitkat" />  
   
   <!-- Use forked cm projects with required changes for htc bravo -->
@@ -508,12 +510,10 @@
   <!-- Use camera with compatibility for htc bravo  -->
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
   
-  <!-- Forked projects with fixes for building with k3 -->
-  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="spz" revision="kitkat-k3-testing" />
-  <project path="bionic" name="platform_bionic" remote="spz" revision="kitkat-k3-testing" />
-  <project path="system/core" name="android_system_core" groups="pdk" remote="spz" revision="kitkat-k3-testing" />
-  
-  <!-- Linaro toolchain -->
+  <!-- Use Purity's bionic for increased performance (thanks!) -->
+  <project path="bionic" name="KitKatPurity/platform_bionic" remote="github" revision="kitkat" /> 
+
+  <!-- Linaro GCC v4.9 toolchain -->
   <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
 
 </manifest>

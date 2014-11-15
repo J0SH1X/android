@@ -495,7 +495,7 @@
   <project path="bionic" name="android_bionic" remote="cm" revision="cm-12.0" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="cm-12.0" />
   <project path="system/core" name="android_system_core" remote="cm" revision="cm-12.0" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cm" revision="cm-12.0" />
+  <!--<project path="hardware/libhardware" name="android_hardware_libhardware" remote="cm" revision="cm-12.0" />-->
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" revision="cm-12.0" /> 
   
   <!-- Use projects with legacy code -->
@@ -512,6 +512,7 @@
   <!-- Use forked projects with required changes for htc bravo -->
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="android-5.0" /> />
   <project path="external/sepolicy" name="android_external_sepolicy" remote="spz" revision="android-5.0" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="android-5.0-wip" />
   
   <!-- Required for enabling A2SD scripts -->
   <project path="external/bash" name="android_external_bash" remote="cm" revision="cm-12.0" />

@@ -337,7 +337,6 @@
   <project name="platform/hardware/qcom/power" path="hardware/qcom/power" />
   <project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors" />
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
-  <project name="platform/hardware/ril" path="hardware/ril" />
   <project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" />
   <project name="platform/hardware/ti/omap4-aah" path="hardware/ti/omap4-aah" />
   <project name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" />
@@ -512,7 +511,8 @@
   <!-- Use forked projects with required changes for htc bravo -->
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="android-5.0" /> />
   <project path="external/sepolicy" name="android_external_sepolicy" remote="spz" revision="android-5.0" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="android-5.0-wip" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="cm-12.0" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="spz" revision="cm-12.0" />
   
   <!-- Required for enabling A2SD scripts -->
   <project path="external/bash" name="android_external_bash" remote="cm" revision="cm-12.0" />

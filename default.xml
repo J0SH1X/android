@@ -532,7 +532,6 @@
   <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
-  <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
@@ -568,4 +567,6 @@
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="spezi77/android_hardware_libhardware_legacy" remote="github" revision="cm-12.0" />
   <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="cm-12.0" groups="pdk" />  
-  </manifest>
+  <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-12.0" groups="pdk" />
+  
+</manifest>

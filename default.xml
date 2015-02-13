@@ -18,14 +18,8 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-
   <project path="android" name="CyanogenMod/android" />
-
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs" />
@@ -328,9 +322,8 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" remote="aosp" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zip" name="CyanogenMod/android_external_zip" />
-  <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" />
+  <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
   <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
@@ -340,7 +333,6 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
@@ -358,7 +350,6 @@
   <project path="frameworks/opt/net/wifi" name="CyanogenMod/android_frameworks_opt_net_wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer" />
   <project path="frameworks/opt/setupwizard" name="CyanogenMod/android_frameworks_opt_setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" />
@@ -372,23 +363,8 @@
   <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
-  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" remote="aosp" />
-  <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/omx-components" name="platform/hardware/intel/common/omx-components" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" remote="aosp" />
-  <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel" remote="aosp" />
-  <project path="hardware/intel/img/libdrm" name="platform/hardware/intel/img/libdrm" groups="intel" remote="aosp" />
-  <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" remote="aosp" />
-  <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" remote="aosp" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/nvidia/audio" name="CyanogenMod/android_hardware_nvidia_audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="CyanogenMod/android_hardware_nvidia_tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" />
@@ -404,7 +380,6 @@
   <project path="hardware/qcom/display-caf/msm8226" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.0-caf-8226" />
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.0-caf-8974" />
   <project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.0-caf-8916" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
   <project path="hardware/qcom/media-caf/apq8084" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-12.0-caf-8084" />
@@ -418,7 +393,6 @@
   <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" remote="aosp" />
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk" />
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" groups="pdk" revision="cm-12.0-caf" />
   <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" remote="aosp" />
@@ -574,6 +548,24 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
-</manifest>
+    
+  <!-- Device specific projects -->
+  <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" remote="github" revision="lollipop" />
+  <project path="device/htc/qsd8k-common" name="spezi77/android_device_htc_qsd8k-common" remote="github" revision="lollipop" />
+
+  <!-- Use my own vendor projects -->
+  <project path="vendor/htc" name="spezi77/android_vendor_htc" remote="github" revision="lollipop" />
+  <project path="vendor/cm" name="spezi77/android_vendor_cm" remote="github" revision="cm-12.0" />
+
+  <project path="build" name="spezi77/android_build" remote="github" revision="cm-12.0" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>  
+  <!-- Use forked projects with added legacy code -->
+  <project path="art" name="spezi77/android_art" remote="github" revision="cm-12.0" groups="pdk" />
+  <project path="frameworks/av" name="spezi77/android_frameworks_av" remote="github" revision="cm-12.0" groups="pdk" />
+  <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-12.0" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="cm-12.0" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="spezi77/android_hardware_libhardware_legacy" remote="github" revision="cm-12.0" />
+  <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="cm-12.0" groups="pdk" />  
+  </manifest>

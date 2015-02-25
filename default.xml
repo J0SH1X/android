@@ -550,7 +550,7 @@
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
     
   <!-- Device specific projects -->
-  <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" remote="github" revision="lollipop" />
+  <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" remote="github" revision="cm-12.0" />
   <project path="device/htc/qsd8k-common" name="spezi77/android_device_htc_qsd8k-common" remote="github" revision="lollipop" />
 
   <!-- Use my own vendor projects -->

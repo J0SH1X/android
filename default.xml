@@ -572,6 +572,5 @@
   
   <!-- Use custom toolchains -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="SaberMod/arm-eabi-4.9" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="spezi77/arm-linux-androideabi-4.9" remote="github" revision="master" />
-  
-  </manifest>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="spezi77/arm-linux-androideabi-4.9" remote="github" revision="master" />  
+</manifest>

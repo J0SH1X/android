@@ -18,7 +18,6 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="android" name="CyanogenMod/android" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs" />
@@ -556,6 +555,8 @@
   <!-- Use my own vendor projects -->
   <project path="vendor/htc" name="spezi77/android_vendor_htc" remote="github" revision="lollipop" />
   <project path="vendor/cm" name="spezi77/android_vendor_cm" remote="github" revision="cm-12.0" />
+
+  <project path="android" name="spezi77/android" remote="github" revision="cm-12.0" />
 
   <project path="build" name="spezi77/android_build" remote="github" revision="cm-12.0" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />

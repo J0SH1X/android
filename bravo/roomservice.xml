@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- remove CM repos -->
+  <remove-project name="CyanogenMod/android_bionic" />
+  <remove-project name="CyanogenMod/android_build" />
+  <remove-project name="CyanogenMod/android_frameworks_base" />
+  <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
+  <remove-project name="CyanogenMod/android_frameworks_native" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
+  <remove-project name="CyanogenMod/android_hardware_libhardware" />
+  <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
+  <remove-project name="CyanogenMod/android_packages_apps_Settings" />
+  <remove-project name="CyanogenMod/android_packages_apps_Torch" />
+  <remove-project name="CyanogenMod/android_vendor_cm" />
+
+  <!-- remove unnecessary keyboard/dictionaries for European market -->
+  <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
+
+  <!-- remove apps for making a slim version which can be installed on NAND -->
+  <remove-project name="CyanogenMod/android_packages_apps_Apollo" />
+  <remove-project name="CyanogenMod/android_packages_apps_Browser" />
+  <remove-project name="CyanogenMod/android_packages_apps_Calendar" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMAccount" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMHome" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" />
+  <remove-project name="CyanogenMod/android_packages_apps_Email" />
+  <remove-project name="CyanogenMod/android_packages_apps_Exchange" />
+  <remove-project name="CyanogenMod/android_packages_apps_Gallery2" />
+  <remove-project name="CyanogenMod/android_packages_apps_Nfc" />
+  <remove-project name="CyanogenMod/android_packages_apps_SoundRecorder" />
+  <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
+  <remove-project name="CyanogenMod/android_packages_apps_VideoEditor" />
+  <remove-project name="CyanogenMod/android_packages_apps_VoiceDialer" />
+  <remove-project name="CyanogenMod/android_packages_apps_VoicePlus" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" />
+
+<!-- BRAVO device repos -->
+  <project path="build" name="spezi77/android_build" groups="pdk" revision="refs/heads/cm-11.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <!-- Use my devicetree and kernel forked from Evervolv -->
+  <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo"  revision="refs/heads/cm-11.0-30-nand" />
+  <project path="device/htc/qsd8k-common" name="spezi77/android_device_htc_qsd8k-common"  revision="refs/heads/cm-11.0" />
+  <!-- Use kernel 3.0.16 -->
+  <project path="kernel/htc/qsd8k" name="spezi77/android_kernel_htc_qsd8k_3.0"  revision="refs/heads/kitkat-ev" />
+  <!-- Use htc vendor blobs with latest Adreno libs from AU_LINUX_ANDROID_JB_VANILLA_04.02.02.060.053 -->
+  <project path="vendor/htc" name="spezi77/android_vendor_htc"  revision="refs/heads/kitkat" /> 
+  <!--  Use hw legacy projects from Evervolv -->
+  <project path="hardware/qcom/audio-legacy" name="Evervolv/android_hardware_qcom_audio-legacy" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/display-legacy" name="Evervolv/android_hardware_qcom_display-legacy" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" revision="refs/heads/kitkat" />  
+
+<!-- Modified CM projects -->
+  <project path="vendor/cm" name="spezi77/android_vendor_cm" revision="cm-11.0-nand" >
+    <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
+  </project>
+  <project path="hardware/libhardware" name="spezi77/android_hardware_libhardware"  revision="refs/heads/cm-11.0" />
+  <project path="frameworks/base" name="spezi77/android_frameworks_base"  revision="refs/heads/cm-11.0" />
+  <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony"  revision="refs/heads/cm-11.0" />
+  <project path="frameworks/native" name="spezi77/android_frameworks_native"  revision="refs/heads/cm-11.0" />
+  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings"  revision="refs/heads/cm-11.0" />
+
+<!-- Misc projects with BRAVO backports -->
+  <project path="packages/apps/Torch" name="spezi77/android_packages_apps_Torch"  revision="refs/heads/slim-4.4" />
+  <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
+  
+  <!-- Switch bionic to Purity for increased performance -->
+  <project path="bionic" name="KitKatPurity/platform_bionic" remote="github" revision="kitkat" />  
+  
+  <!-- Use Google GCC 4.8 as kernel target toolchain -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="refs/heads/master" />
+
+</manifest>

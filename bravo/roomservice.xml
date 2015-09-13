@@ -26,7 +26,6 @@
   <remove-project name="CyanogenMod/android_packages_apps_CMAccount" />
   <remove-project name="CyanogenMod/android_packages_apps_CMHome" />
   <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" />
-  <remove-project name="CyanogenMod/android_packages_apps_Email" />
   <remove-project name="CyanogenMod/android_packages_apps_Exchange" />
   <remove-project name="CyanogenMod/android_packages_apps_Gallery2" />
   <remove-project name="CyanogenMod/android_packages_apps_Nfc" />

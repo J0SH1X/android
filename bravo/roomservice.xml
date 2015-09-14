@@ -9,6 +9,7 @@
   <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
   <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
   <remove-project name="CyanogenMod/android_hardware_ril" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
   <remove-project name="CyanogenMod/android_system_netd" />
   <project name="spezi77/android_build" path="build" revision="bs-5.1">
     <copyfile dest="Makefile" src="core/root.mk" />
@@ -30,4 +31,10 @@
   <project name="spezi77/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-12.1" />
   <project name="spezi77/android_hardware_ril" path="hardware/ril" revision="cm-12.1" />
   <project name="spezi77/android_system_netd" path="system/netd" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_lz4" path="external/lz4" revision="cm-12.1" />
+  <project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" />
+  <project name="CyanogenMod/android_external_whispersystems_curve25519-java" path="external/whispersystems/curve25519" />
+  <project name="CyanogenMod/android_external_whispersystems_libtextsecure-java" path="external/whispersystems/libtextsecure" />
+  <project name="CyanogenMod/android_external_whispersystems_libaxolotl-android" path="external/whispersystems/libaxolotl" />
+
 </manifest>

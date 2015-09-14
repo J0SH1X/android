@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="scotthartbti/platform_build" />
+  <remove-project name="CyanogenMod/android_bionic" />
+  <remove-project name="CyanogenMod/android_bootable_recovery" />
+  <remove-project name="CyanogenMod/android_external_sepolicy" />
+  <remove-project name="CyanogenMod/android_frameworks_native" />
+  <remove-project name="CyanogenMod/android_frameworks_opt_net_wifi" />
+  <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
+  <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
+  <remove-project name="CyanogenMod/android_hardware_ril" />
+  <remove-project name="CyanogenMod/android_system_netd" />
+  <project name="spezi77/android_build" path="build" revision="bs-5.1">
+    <copyfile dest="Makefile" src="core/root.mk" />
+  </project>
+  <project name="spezi77/android_kernel_htc_qsd8k_3.0" path="kernel/htc/qsd8k" revision="lollipop-mr1-f2fs" />
+  <project name="spezi77/android_hardware_qcom_audio-legacy" path="hardware/qcom/audio-legacy" revision="cm-12.1" />
+  <project name="spezi77/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-12.1" />
+  <project name="spezi77/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-12.1" />
+  <project name="spezi77/android_hardware_qcom_gps-legacy" path="hardware/qcom/gps-legacy" revision="cm-12.1" />
+  <project name="spezi77/android_device_htc_bravo" path="device/htc/bravo" revision="bs-5.1" />
+  <project name="spezi77/android_device_htc_qsd8k-common" path="device/htc/qsd8k-common" revision="cm-12.1" />
+  <project name="spezi77/android_vendor_htc" path="vendor/htc" revision="lollipop" />
+  <project name="spezi77/android_bionic" path="bionic" revision="cm-12.1" />
+  <project name="spezi77/android_bootable_recovery" path="bootable/recovery" revision="lollipop-5.1" />
+  <project name="spezi77/android_external_sepolicy" path="external/sepolicy" revision="cm-12.1" />
+  <project name="spezi77/android_frameworks_native" path="frameworks/native" revision="cm-12.1" />
+  <project name="spezi77/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" revision="cm-12.1" />
+  <project name="spezi77/android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="cm-12.1" />
+  <project name="spezi77/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-12.1" />
+  <project name="spezi77/android_hardware_ril" path="hardware/ril" revision="cm-12.1" />
+  <project name="spezi77/android_system_netd" path="system/netd" revision="cm-12.1" />
+</manifest>

@@ -70,8 +70,8 @@
   <!-- TWRP 2.7.1.0 -->  
   <project path="bootable_recovery" name="spezi77/android_bootable_recovery" revision="kitkat" />  
 
-  <!-- Switch bionic to Purity for increased performance -->
-  <project path="bionic" name="KitKatPurity/platform_bionic" revision="kitkat" />  
+  <!-- Switch bionic to Kitkat Purity for increased performance -->
+  <project path="bionic" name="spezi77/platform_bionic" revision="kitkat" />  
   
   <!-- Use Google GCC 4.8 as kernel target toolchain -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="refs/heads/master" />

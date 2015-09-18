@@ -36,5 +36,5 @@
   <project name="CyanogenMod/android_external_whispersystems_curve25519-java" path="external/whispersystems/curve25519" />
   <project name="CyanogenMod/android_external_whispersystems_libtextsecure-java" path="external/whispersystems/libtextsecure" />
   <project name="CyanogenMod/android_external_whispersystems_libaxolotl-android" path="external/whispersystems/libaxolotl" />
-
+  <project name="scotthartbti/android_packages_apps_PerformanceControl" path="packages/apps/PerformanceControl" revision="lp5.0" />
 </manifest>

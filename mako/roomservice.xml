@@ -8,8 +8,9 @@
   <remove-project name="CyanogenMod/android_system_core" />
 
 <!-- MAKO device repos -->
-  <!-- Use Bruce's non-caf kernel -->
-  <project path="kernel/google/msm" name="bruce2728/android_kernel_google_msm" revision="cm-11.0" />
+
+  <!-- Use my N4 kernel (close to stock google) -->
+  <project path="kernel/google/msm" name="spezi77/android_kernel_google_msm" revision="android-msm-mako-3.4-kitkat-mr2" />
 
   <!-- Kitkat vendor blobs and device tree-->
   <project path="vendor/lge" name="spezi77/android_vendor_lge" revision="kk-4.4.4" /> 

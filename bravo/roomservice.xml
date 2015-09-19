@@ -32,9 +32,10 @@
   <project name="spezi77/android_hardware_ril" path="hardware/ril" revision="cm-12.1" />
   <project name="spezi77/android_system_netd" path="system/netd" revision="cm-12.1" />
   <project name="CyanogenMod/android_external_lz4" path="external/lz4" revision="cm-12.1" />
-  <project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" />
+  <project name="spezi77/cm_platform_sdk" path="vendor/cmsdk" revision="bs-5.1" />
   <project name="CyanogenMod/android_external_whispersystems_curve25519-java" path="external/whispersystems/curve25519" />
   <project name="CyanogenMod/android_external_whispersystems_libtextsecure-java" path="external/whispersystems/libtextsecure" />
   <project name="CyanogenMod/android_external_whispersystems_libaxolotl-android" path="external/whispersystems/libaxolotl" />
   <project name="scotthartbti/android_packages_apps_PerformanceControl" path="packages/apps/PerformanceControl" revision="lp5.0" />
+  <project name="SlimRoms/frameworks_opt_cards" path="frameworks/opt/cards" revision="lp5.1" />
 </manifest>

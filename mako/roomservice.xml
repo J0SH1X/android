@@ -7,6 +7,8 @@
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
   <remove-project name="CyanogenMod/android_vendor_cm" />
   <remove-project name="CyanogenMod/android_system_core" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
 
 <!-- MAKO device repos -->
 

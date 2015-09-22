@@ -14,7 +14,7 @@
   <project path="kernel/google/msm" name="spezi77/android_kernel_google_msm" revision="kk-mr2-wip" />
 
   <!-- Kitkat vendor blobs and device tree-->
-  <project path="vendor/lge" name="spezi77/android_vendor_lge" revision="kk-4.4.4" /> 
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" revision="cm-11.0" />
   <project path="device/lge/mako" name="spezi77/android_device_lge_mako" revision="cm-11.0" />
 
 <!-- Forked CM projects -->

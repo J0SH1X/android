@@ -27,7 +27,7 @@
   <project path="vendor/cm" name="spezi77/android_vendor_cm" revision="cm-11.0-mako" >
     <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
   </project>
-  <project path="system/core" name="spezi77/android_system_core" revision="cm-11.0-mako" />
+  <project path="system/core" name="spezi77/android_system_core" revision="cm-11.0" />
 
   <!-- Use Google GCC 4.8 as kernel target toolchain -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />

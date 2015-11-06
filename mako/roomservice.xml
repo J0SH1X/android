@@ -4,6 +4,7 @@
 <!-- remove CM repos -->
   <remove-project name="CyanogenMod/android_build" />
   <remove-project name="CyanogenMod/android_external_flac" />
+  <remove-project name="CyanogenMod/android_external_tremolo" />
   <remove-project name="CyanogenMod/android_external_skia" />
   <remove-project name="CyanogenMod/android_frameworks_av" />
   <remove-project name="CyanogenMod/android_frameworks_base" />
@@ -29,6 +30,7 @@
   </project>
   <project path="external/flac" name="spezi77/android_external_flac" revision="cm-11.0" />
   <project path="external/skia" name="spezi77/android_external_skia" revision="cm-11.0" />
+  <project path="external/tremolo" name="spezi77/android_external_tremolo" revision="cm-11.0" />
   <project path="frameworks/av" name="spezi77/android_frameworks_av" revision="cm-11.0" />
   <project path="frameworks/base" name="spezi77/android_frameworks_base" revision="cm-11.0-mako" />
   <project path="vendor/cm" name="spezi77/android_vendor_cm" revision="cm-11.0-mako" >

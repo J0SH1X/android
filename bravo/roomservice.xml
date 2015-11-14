@@ -84,7 +84,7 @@
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
 
   <!-- TWRP 2.7.1.0 -->  
-  <project path="bootable_recovery" name="spezi77/android_bootable_recovery" revision="kitkat" />  
+  <project path="bootable/recovery" name="spezi77/android_bootable_recovery" revision="kitkat" />  
 
   <!-- Switch bionic to Kitkat Purity for increased performance -->
   <project path="bionic" name="spezi77/platform_bionic" revision="kitkat" />  

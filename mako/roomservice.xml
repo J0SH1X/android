@@ -16,6 +16,9 @@
   <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
   <remove-project name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
 
+<!-- remove AOSP repos -->
+  <remove-project path="cts" name="platform/cts" />
+
 <!-- MAKO device repos -->
 
   <!-- Use my N4 kernel (close to stock google) -->
@@ -40,6 +43,7 @@
   <project path="vendor/cyngn" name="spezi77/android_vendor_cyngn" />
   <project path="system/core" name="spezi77/android_system_core" revision="cm-11.0" />
   <project path="system/security" name="spezi77/android_system_security" revision="cm-11.0" />
+  <project path="cts" name="spezi77/android_cts" revision="cm-11.0" />
 
   <!-- Use Google GCC 4.8 as kernel target toolchain -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />

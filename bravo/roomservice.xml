@@ -22,6 +22,9 @@
   <remove-project name="cyngn/android_vendor_cyngn" />
   <remove-project name="CyanogenMod/android_system_core" />
   <remove-project name="CyanogenMod/android_system_security" />
+
+<!-- remove AOSP repos -->
+  <remove-project path="cts" name="platform/cts" />
   
   <!-- remove unnecessary keyboard/dictionaries for European market -->
   <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
@@ -78,6 +81,7 @@
   <project path="frameworks/av" name="spezi77/android_frameworks_av" revision="cm-11.0" />
   <project path="system/core" name="spezi77/android_system_core" revision="cm-11.0" />
   <project path="system/security" name="spezi77/android_system_security" revision="cm-11.0" />
+  <project path="cts" name="spezi77/android_cts" revision="cm-11.0" />
 
 <!-- Misc projects with BRAVO backports -->
   <project path="packages/apps/Torch" name="spezi77/android_packages_apps_Torch"  revision="refs/heads/slim-4.4" />

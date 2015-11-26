@@ -21,8 +21,8 @@
 
 <!-- MAKO device repos -->
 
-  <!-- Use my N4 kernel (close to stock google) -->
-  <project path="kernel/google/msm" name="spezi77/android_kernel_google_msm" revision="kk-mr2-wip" />
+  <!-- Use my own fork of N4 kernel (credits to faux123) -->
+  <project path="kernel/google/msm" name="spezi77/mako" revision="kk_mr2_cm" />
 
   <!-- Kitkat vendor blobs and device tree-->
   <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" revision="cm-11.0" />

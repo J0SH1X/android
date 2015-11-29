@@ -68,7 +68,7 @@
   <project path="frameworks/base" name="spezi77/android_frameworks_base" revision="refs/heads/cm-11.0" />
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" revision="refs/heads/cm-11.0" />
   <project path="frameworks/native" name="spezi77/android_frameworks_native" revision="refs/heads/cm-11.0" />
-  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" revision="refs/heads/cm-11.0" />
+  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" revision="refs/heads/cm-11.0-spz" />
   
 <!-- Forked projects with Stagefright 2.0 patches -->  
   <project path="external/flac" name="spezi77/android_external_flac" revision="cm-11.0" />

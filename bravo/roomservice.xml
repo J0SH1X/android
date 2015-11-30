@@ -3,7 +3,6 @@
 
 <!-- remove CM repos -->
   <remove-project name="CyanogenMod/android_bionic" />
-  <remove-project name="CyanogenMod/android_bootable_recovery" />
   <remove-project name="CyanogenMod/android_build" />
   <remove-project name="CyanogenMod/android_external_flac" />
   <remove-project name="CyanogenMod/android_frameworks_base" />
@@ -78,9 +77,6 @@
 <!-- Misc projects with BRAVO backports -->
   <project path="packages/apps/Torch" name="spezi77/android_packages_apps_Torch"  revision="refs/heads/slim-4.4" />
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
-
-  <!-- TWRP 2.7.1.0 -->  
-  <project path="bootable/recovery" name="spezi77/android_bootable_recovery" revision="kitkat" />  
 
   <!-- Switch bionic to Kitkat Purity for increased performance -->
   <project path="bionic" name="spezi77/platform_bionic" revision="kitkat" />  

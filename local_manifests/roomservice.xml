@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- remove repos -->
+  <remove-project name="CyanogenMod/android_bionic" />
+  <remove-project name="CyanogenMod/android_external_svox" />
+  <remove-project name="CyanogenMod/android_external_flac" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
+  <remove-project name="CyanogenMod/android_hardware_libhardware" />
+  <remove-project name="scotthartbti/android_packages_apps_Camera2" />
+  <remove-project name="scotthartbti/android_packages_apps_Torch" />
+  <remove-project name="cyngn/android_vendor_cyngn" />
+  <remove-project name="scotthartbti/platform_system_core" />
+  <remove-project name="platform/cts" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
+  <remove-project name="CyanogenMod/android_packages_apps_Apollo" />
+  <remove-project name="CyanogenMod/android_packages_apps_Browser" />
+  <remove-project name="scotthartbti/android_packages_apps_Calendar" />
+  <remove-project name="CyanogenMod/android_packages_apps_Exchange" />
+  <remove-project name="scotthartbti/android_packages_apps_Gallery2" />
+  <remove-project name="CyanogenMod/android_packages_apps_Nfc" />
+  <remove-project name="CyanogenMod/android_packages_apps_SoundRecorder" />
+  <remove-project name="CyanogenMod/android_packages_apps_VideoEditor" />
+  <remove-project name="CyanogenMod/android_packages_apps_VoiceDialer" />
+  <remove-project name="CyanogenMod/android_packages_apps_VoicePlus" />
+  <remove-project name="scotthartbti/android_packages_inputmethods_LatinIME" />
+  <remove-project name="scotthartbti/android_frameworks_av" />
+  <remove-project name="scotthartbti/android_frameworks_base" />
+  <remove-project name="scotthartbti/frameworks_native" />
+  <remove-project name="scotthartbti/android_packages_apps_Settings" />
+  <remove-project name="scotthartbti/platform_build" />
+
+<!-- BRAVO device repos -->
+  <!-- Use my devicetree and kernel forked from Evervolv -->
+  <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" revision="refs/heads/bs44" />
+  <project path="device/htc/qsd8k-common" name="spezi77/android_device_htc_qsd8k-common" revision="refs/heads/bs44" />
+  <!-- Use kernel 2.6.38 as default-->
+  <project path="kernel/htc/qsd8k" name="spezi77/android_kernel_htc_qsd8k" revision="refs/heads/kitkat-ls" />
+  <!-- Use htc vendor blobs with latest Adreno libs from AU_LINUX_ANDROID_JB_VANILLA_04.02.02.060.053 -->
+  <project path="vendor/htc" name="spezi77/android_vendor_htc" revision="refs/heads/kitkat" /> 
+  <!--  Use hw legacy projects from Evervolv -->
+  <project path="hardware/qcom/audio-legacy" name="Evervolv/android_hardware_qcom_audio-legacy" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/display-legacy" name="Evervolv/android_hardware_qcom_display-legacy" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" revision="refs/heads/kitkat" />  
+
+<!-- Alternative projects -->
+  <project path="vendor/cyngn" name="spezi77/android_vendor_cyngn" />
+  <project path="hardware/libhardware" name="spezi77/android_hardware_libhardware" revision="refs/heads/cm-11.0" />
+  <project path="external/svox" name="platform/external/svox" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
+  
+<!-- Use my forked projects -->  
+  <project path="external/flac" name="spezi77/android_external_flac" revision="refs/heads/cm-11.0" />
+  <project path="cts" name="spezi77/android_cts" revision="refs/heads/cm-11.0" />
+  <project path="system/core" name="spezi77/android_system_core" revision="refs/heads/bs44" />
+  <project path="frameworks/av" name="spezi77/android_frameworks_av" revision="refs/heads/bs44" />
+  <project path="frameworks/base" name="spezi77/android_frameworks_base" revision="refs/heads/bs44" />
+  <project path="frameworks/native" name="spezi77/android_frameworks_native" revision="refs/heads/bs44" />
+  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" revision="refs/heads/bs44" />
+  <project path="build" name="spezi77/android_build" revision="refs/heads/bs44" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+<!-- Misc projects with BRAVO backports -->
+  <project path="packages/apps/Torch" name="spezi77/android_packages_apps_Torch"  revision="refs/heads/slim-4.4" />
+  <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" revision="refs/heads/kitkat" />
+
+  <!-- Switch bionic to Kitkat Purity for increased performance -->
+  <project path="bionic" name="spezi77/platform_bionic" revision="refs/heads/kitkat" />  
+
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Remove projects -->
+  <remove-project name="scotthartbti/platform_build" />
+
+<!-- Track own projects -->
+  <project path="build" name="spezi77/android_build" remote="github" revision="bs6" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+<!-- Device specific -->
+  <project name="spezi77/android_device_lge_mako" path="device/lge/mako" remote="github" revision="bs6" />
+  <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
+  <project name="SAOSP-M/platform_vendor_lge_mako" path="vendor/lge/mako" remote="github" revision="M" />
+
+<!-- Patched mako prebuilt kernel from Dmitry-->
+<project path="device/lge/mako-kernel" name="SAOSP-M/platform_mako_kernel" groups="device,mako" remote="github" revision="M" />
+
+<!-- cm-13 kernel mod -->
+<project name="spezi77/cm_kernel_google_msm" path="kernel/google/msm" remote="github" revision="cm-13.0-wip" />
+
+</manifest>
+

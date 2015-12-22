@@ -3,7 +3,7 @@
 
 <!-- Remove BS projects -->
   <remove-project name="scotthartbti/platform_build" />
-  <!--<remove-project name="scotthartbti/android_frameworks_native" />-->
+  <remove-project name="scotthartbti/frameworks_native" />
 
 <!-- Remove CM projects -->
   <remove-project name="CyanogenMod/android_bionic" />
@@ -20,8 +20,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="spezi77/android_bionic" remote="github" revision="cm-13.0" />
-  <!-- 2do: apply patch by maniacx which will remove warning on tripple-buffer-support -->
-  <!--<project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-13.0" />-->
+  <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="bs6" />
   <project path="frameworks/opt/net/wifi" name="spezi77/android_frameworks_opt_net_wifi" remote="github" revision="cm-13.0" />
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="cm-13.0" />
   <project path="hardware/libhardware" name="spezi77/android_hardware_libhardware" remote="github" revision="cm-13.0" />

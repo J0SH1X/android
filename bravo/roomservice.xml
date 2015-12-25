@@ -16,7 +16,7 @@
   <remove-project name="CyanogenMod/android_system_netd" />
 
 <!-- Track own projects -->
-  <project path="build" name="spezi77/android_build" remote="github" revision="bs6" >
+  <project path="build" name="spezi77/android_build" remote="github" revision="bs6-bravo" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="spezi77/android_bionic" remote="github" revision="cm-13.0" />

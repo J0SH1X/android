@@ -3,22 +3,23 @@
 
 <!-- Remove projects -->
   <remove-project name="scotthartbti/platform_build" />
+  <remove-project name="CyanogenMod/android_bootable_recovery" />
 
 <!-- Track own projects -->
-  <project path="build" name="spezi77/android_build" remote="github" revision="bs6" >
+  <project path="build" name="spezi77/android_build" remote="github" revision="bs6-mako" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
 <!-- Device specific -->
   <project name="spezi77/android_device_lge_mako" path="device/lge/mako" remote="github" revision="bs6" />
   <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
-  <project name="SAOSP-M/platform_vendor_lge_mako" path="vendor/lge/mako" remote="github" revision="M" />
+  <project name="spezi77/android_vendor_lge" path="vendor/lge" remote="github" revision="cm-13.0" />
 
-<!-- Patched mako prebuilt kernel from Dmitry-->
-<project path="device/lge/mako-kernel" name="SAOSP-M/platform_mako_kernel" groups="device,mako" remote="github" revision="M" />
+<!-- Kernel with patch for Android M -->
+<project name="spezi77/android_kernel_google_msm" path="kernel/google/msm" remote="github" revision="cm-13.0-mako" />
 
-<!-- cm-13 kernel mod -->
-<project name="spezi77/cm_kernel_google_msm" path="kernel/google/msm" remote="github" revision="cm-13.0-wip" />
+<!-- TWRP -->
+  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-6.0" />
 
 </manifest>
 

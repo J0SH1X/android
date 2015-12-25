@@ -4,7 +4,6 @@
 <!-- Remove BS projects -->
   <remove-project name="scotthartbti/platform_build" />
   <remove-project name="scotthartbti/frameworks_native" />
-  <remove-project name="scotthartbti/platform_system_core" />
 
 <!-- Remove CM projects -->
   <remove-project name="CyanogenMod/android_bionic" />
@@ -17,7 +16,7 @@
   <remove-project name="CyanogenMod/android_system_netd" />
 
 <!-- Track own projects -->
-  <project path="build" name="spezi77/android_build" remote="github" revision="bs6" >
+  <project path="build" name="spezi77/android_build" remote="github" revision="bs6-bravo" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="spezi77/android_bionic" remote="github" revision="cm-13.0" />
@@ -27,7 +26,6 @@
   <project path="hardware/libhardware" name="spezi77/android_hardware_libhardware" remote="github" revision="cm-13.0" />
   <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="cm-13.0" />
   <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-13.0" />
-  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6" />
 
 <!-- Stl port -->
   <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
@@ -43,9 +41,6 @@
   <project path="hardware/qcom/audio-legacy" name="maniacx/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-qsd8k" />
   <project path="hardware/qcom/display-legacy" name="maniacx/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-qsd8k" />
   <project path="hardware/qcom/media-legacy" name="maniacx/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-qsd8k" />
-
-<!-- TWRP -->
-  <project path="bootable/recovery" name="spezi77/android_bootable_recovery" remote="github" revision="mm-6.0" />
 
 </manifest>
 

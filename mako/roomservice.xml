@@ -2,11 +2,17 @@
 <manifest>
 <!-- Remove projects -->
   <remove-project name="scotthartbti/platform_build" />
+  <remove-project name="scotthartbti/platform_system_core" />
+
+<!-- Remove CM projects -->
+  <remove-project name="CyanogenMod/android_bionic" />
 
 <!-- Track own projects -->
   <project path="build" name="spezi77/android_build" remote="github" revision="bs6-mako" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="bionic" name="spezi77/android_bionic" remote="github" revision="bs6" />
+  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
 
 <!-- Device specific -->
   <project name="spezi77/android_device_lge_mako" path="device/lge/mako" remote="github" revision="bs6" />
@@ -14,6 +20,6 @@
   <project name="spezi77/android_vendor_lge" path="vendor/lge" remote="github" revision="cm-13.0" />
 
 <!-- Kernel with patch for Android M -->
-<project name="spezi77/android_kernel_google_msm" path="kernel/google/msm" remote="github" revision="cm-13.0-mako" />
+  <project name="spezi77/android_kernel_google_msm" path="kernel/google/msm" remote="github" revision="cm-13.0-mako" />
 
 </manifest>

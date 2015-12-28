@@ -29,7 +29,7 @@
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="cm-13.0" />
   <project path="hardware/libhardware" name="spezi77/android_hardware_libhardware" remote="github" revision="cm-13.0" />
   <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="cm-13.0" />
-  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6" />
+  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-bravo" />
   <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-13.0" />
   <project path="vendor/beanstalk" name="spezi77/android_vendor_beanstalk" remote="github" revision="bs6-bravo" />
 

@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-<!-- Remove BS projects -->
+<!-- Remove projects -->
   <remove-project name="scotthartbti/platform_build" />
   <remove-project name="scotthartbti/frameworks_native" />
   <remove-project name="scotthartbti/platform_system_core" />
+  <remove-project name="scotthartbti/android_vendor_beanstalk" />
 
 <!-- Remove CM projects -->
   <remove-project name="CyanogenMod/android_bionic" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
   <remove-project name="CyanogenMod/android_bootable_recovery" />
+  <remove-project name="CyanogenMod/android_external_skia" />
   <remove-project name="CyanogenMod/android_frameworks_opt_net_wifi" />
   <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
   <remove-project name="CyanogenMod/android_hardware_libhardware" />
   <remove-project name="CyanogenMod/android_hardware_ril" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" />
   <remove-project name="CyanogenMod/android_system_netd" />
 
 <!-- Track own projects -->
@@ -21,13 +23,15 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="spezi77/android_bionic" remote="github" revision="cm-13.0" />
+  <project path="external/skia" name="spezi77/android_external_skia" remote="github" revision="cm-13.0" />
   <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="bs6" />
   <project path="frameworks/opt/net/wifi" name="spezi77/android_frameworks_opt_net_wifi" remote="github" revision="cm-13.0" />
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="cm-13.0" />
   <project path="hardware/libhardware" name="spezi77/android_hardware_libhardware" remote="github" revision="cm-13.0" />
   <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="cm-13.0" />
-  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6" />
+  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-bravo" />
   <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-13.0" />
+  <project path="vendor/beanstalk" name="spezi77/android_vendor_beanstalk" remote="github" revision="bs6-bravo" />
 
 <!-- Stl port -->
   <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
@@ -41,11 +45,10 @@
 <!-- BRAVO hardware repos -->
   <project path="hardware/qcom/gps-legacy" name="spezi77/android_hardware_qcom_gps-legacy" remote="github" revision="cm-12.1" />
   <project path="hardware/qcom/audio-legacy" name="maniacx/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-qsd8k" />
-  <project path="hardware/qcom/display-legacy" name="maniacx/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-qsd8k" />
+  <project path="hardware/qcom/display-legacy" name="spezi77/android_hardware_qcom_display-legacy" remote="github" revision="cm-13.0-caf-qsd8k" />
   <project path="hardware/qcom/media-legacy" name="maniacx/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-qsd8k" />
 
 <!-- TWRP -->
   <project path="bootable/recovery" name="spezi77/android_bootable_recovery" remote="github" revision="mm-6.0" />
 
 </manifest>
-

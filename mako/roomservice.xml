@@ -11,7 +11,7 @@
   <project path="build" name="spezi77/android_build" remote="github" revision="bs6-mako" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="spezi77/android_bionic" remote="github" revision="bs6" />
+  <project path="bionic" name="spezi77/android_bionic" remote="github" revision="bs6-mako" />
   <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
 
 <!-- Device specific -->

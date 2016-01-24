@@ -15,7 +15,6 @@
   <remove-project name="CyanogenMod/android_hardware_libhardware" />
   <remove-project name="CyanogenMod/android_hardware_ril" />
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
-  <remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" />
   <remove-project name="CyanogenMod/android_system_netd" />
 
 <!-- Track own projects -->

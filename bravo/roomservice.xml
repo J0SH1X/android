@@ -45,7 +45,7 @@
   <project path="hardware/qcom/gps-legacy" name="spezi77/android_hardware_qcom_gps-legacy" remote="github" revision="cm-12.1" />
   <project path="hardware/qcom/audio-legacy" name="maniacx/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-qsd8k" />
   <project path="hardware/qcom/display-legacy" name="spezi77/android_hardware_qcom_display-legacy" remote="github" revision="cm-13.0-caf-qsd8k" />
-  <project path="hardware/qcom/media-legacy" name="maniacx/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-qsd8k" />
+  <project path="hardware/qcom/media-legacy" name="spezi77/android_hardware_qcom_media-legacy" remote="github" revision="cm-13.0-caf-qsd8k" />
 
 <!-- TWRP -->
   <project path="bootable/recovery" name="spezi77/android_bootable_recovery" remote="github" revision="mm-6.0" />

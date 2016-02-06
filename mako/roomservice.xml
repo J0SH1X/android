@@ -2,7 +2,6 @@
 <manifest>
 
 <!-- Remove projects which need device specific changes -->
-  <remove-project name="scotthartbti/platform_build" />
   <remove-project name="scotthartbti/platform_system_core" />
 
 <!-- Drop GCC 4.8 to force kernel building with 4.9 -->
@@ -12,9 +11,6 @@
   <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
 
 <!-- Track own projects -->
-  <project path="build" name="spezi77/android_build" remote="github" revision="bs6-mako" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
 
 <!-- Device specific -->

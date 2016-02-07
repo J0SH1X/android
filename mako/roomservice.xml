@@ -7,6 +7,9 @@
 <!-- Drop GCC 4.8 to force kernel building with 4.9 -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 
+<!-- Drop AOSP GCC androideabi 4.9 (too old) we use UBERTC androideabi 4.9 instead: https://bitbucket.org/UBERTC/arm-linux-androideabi-4.9/downloads -->
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+
 <!-- Camera2 app can be replaced with Snap camera app on devices with Snapdragon CPU -->
   <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
 

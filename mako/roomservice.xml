@@ -4,6 +4,7 @@
 <!-- Remove projects which need device specific changes -->
   <remove-project name="scotthartbti/platform_build" />
   <remove-project name="scotthartbti/platform_system_core" />
+  <remove-project name="scotthartbti/android_bionic" />
 
 <!-- Drop GCC 4.8 to force kernel building with 4.9 -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
@@ -18,6 +19,7 @@
   <project path="build" name="spezi77/android_build" remote="github" revision="bs6-mako-opt" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="bionic" name="spezi77/android_bionic" remote="github" revision="bs6-mako" />
   <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
 
 <!-- Device specific -->

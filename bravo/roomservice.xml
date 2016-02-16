@@ -4,7 +4,7 @@
   <remove-project name="scotthartbti/platform_build" />
   <remove-project name="scotthartbti/android_bionic" />
   <remove-project name="scotthartbti/android_frameworks_base" />
-  <remove-project name="scotthartbti/packages_apps_Settings" />
+  <remove-project name="scotthartbti/android_packages_apps_Settings" />
   <remove-project name="scotthartbti/platform_system_core" />
   <remove-project name="scotthartbti/android_vendor_beanstalk" />
 

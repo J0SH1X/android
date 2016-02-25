@@ -6,6 +6,7 @@
   <remove-project name="scotthartbti/platform_system_core" />
   <remove-project name="scotthartbti/android_bionic" />
   <remove-project name="scotthartbti/android_frameworks_base" />
+  <remove-project name="scotthartbti/android_art" />
 
 <!-- Drop GCC 4.8 to force kernel building with 4.9 -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
@@ -17,6 +18,7 @@
   <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
 
 <!-- Track own projects -->
+  <project path="art" name="spezi77/android_art" remote="github" revision="bs6-opt" />
   <project path="build" name="spezi77/android_build" remote="github" revision="bs6-mako-opt" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>

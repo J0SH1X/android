@@ -6,24 +6,40 @@
   <remove-project name="scotthartbti/platform_system_core" />
   <remove-project name="scotthartbti/android_bionic" />
   <remove-project name="scotthartbti/android_frameworks_base" />
+
+<!-- Remove projects to use my own ones with optimizations -->
   <remove-project name="scotthartbti/android_art" />
+  <remove-project name="CyanogenMod/android_frameworks_native" />
+  <remove-project name="CyanogenMod/android_external_libpng" />
+  <remove-project name="CyanogenMod/android_frameworks_support" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_display" />
+  <remove-project name="platform/dalvik" />
+
+<!-- Drop in order to use patch for Java 8 -->
+  <remove-project name="platform/external/guava" />
 
 <!-- Drop GCC 4.8 to force kernel building with 4.9 -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 
-<!-- Drop AOSP GCC androideabi 4.9 (too old) we use UBERTC androideabi 4.9 instead: https://bitbucket.org/UBERTC/arm-linux-androideabi-4.9/downloads -->
-  <!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />-->
+<!-- Drop AOSP GCC androideabi 4.9 (too old) we use UBERTC androideabi 5.3 instead: https://s.basketbuild.com/uploads/devs/Cl3Kener/TOOLCHAIN/uber-arm-linux-androideabi-5.3.tar.xz -->
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
 
 <!-- Camera2 app can be replaced with Snap camera app on devices with Snapdragon CPU -->
   <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
 
 <!-- Track own projects -->
-  <project path="art" name="spezi77/android_art" remote="github" revision="bs6-opt" />
+  <project path="art" name="spezi77/android_art" remote="github" revision="bs6-mako-opt" />
   <project path="build" name="spezi77/android_build" remote="github" revision="bs6-mako-opt" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="spezi77/android_bionic" remote="github" revision="bs6-mako" />
+  <project path="dalvik" name="spezi77/dalvik" remote="github" revision="m" />
+  <project path="external/guava" name="spezi77/external_guava" remote="github" revision="m" />
+  <project path="external/libpng" name="spezi77/android_external_libpng" remote="github" revision="cm-13.0-mako" />
   <project path="frameworks/base" name="spezi77/android_frameworks_base" remote="github" revision="bs6-mako" />
+  <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-13.0-mako" />
+  <project path="frameworks/support" name="spezi77/frameworks_support" remote="github" revision="cm-13.0-mako" />
+  <project path="hardware/qcom/display" name="spezi77/android_hardware_qcom_display" remote="github" revision="cm-13.0-mako" />
   <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
 
 <!-- Device specific -->

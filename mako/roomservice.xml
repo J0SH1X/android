@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="bb"
+           fetch="https://bitbucket.org/" />
+
 <!-- Remove projects which need device specific changes -->
   <remove-project name="scotthartbti/platform_build" />
   <remove-project name="scotthartbti/platform_system_core" />
@@ -59,5 +62,8 @@
 
 <!-- Kernel with patch for Android M -->
   <project name="spezi77/android_kernel_google_msm" path="kernel/google/msm" remote="github" revision="mm-6.0" />
+
+<!--Dragon TC -->
+  <project groups="pdk,linux" name="dragon-tc/dragontc-3.9" path="prebuilts/clang/linux-x86/host/3.9" remote="bb" revision="master" />
 
 </manifest>

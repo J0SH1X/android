@@ -14,9 +14,12 @@
   <remove-project name="scotthartbti/android_art" />
   <remove-project name="CyanogenMod/android_frameworks_native" />
   <remove-project name="CyanogenMod/android_external_libpng" />
+  <remove-project name="CyanogenMod/android_frameworks_rs" />
   <remove-project name="CyanogenMod/android_frameworks_support" />
   <remove-project name="CyanogenMod/android_hardware_qcom_display" />
   <remove-project name="CyanogenMod/android_dalvik" />
+  <remove-project name="platform/external/llvm" />
+  <remove-project name="platform/prebuilts/ndk" />
 
 <!-- Drop in order to use patch for Java 8 -->
   <remove-project name="platform/external/guava" />
@@ -45,6 +48,11 @@
   <project path="hardware/qcom/display" name="spezi77/android_hardware_qcom_display" remote="github" revision="cm-13.0-mako" />
   <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
 
+<!-- ScrewdAOSP -->
+  <project path="frameworks/rs" name="ScrewdAOSP/frameworks_rs" remote="github" revision="m" />
+  <project path="external/llvm" name="ScrewdAOSP/external_llvm" remote="github" revision="m" />
+  <project path="prebuilts/ndk" name="ScrewdAOSP/prebuilts_ndk" groups="pdk" remote="github" revision="m"/>
+
 <!-- add back CM's display-caf -->
   <project path="hardware/qcom/display-caf/apq8084" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-13.0-caf-8084" />
   <project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-13.0-caf-8916" />
@@ -53,7 +61,6 @@
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-13.0-caf-8974" />
   <project path="hardware/qcom/display-caf/msm8994" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-13.0-caf-8994" />
   <project path="hardware/qcom/display-caf/msm8996" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-13.0-caf-8996" />
-
 
 <!-- Device specific -->
   <project name="spezi77/android_device_lge_mako" path="device/lge/mako" remote="github" revision="bs6" />

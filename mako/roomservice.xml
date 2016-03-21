@@ -34,7 +34,7 @@
   </project>
   <project path="external/flac" name="spezi77/android_external_flac" revision="cm-11.0" />
   <project path="frameworks/base" name="spezi77/android_frameworks_base" revision="cm-11.0-mako" />
-  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" revision="cm-11.0-spz" >
+  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" revision="cm-11.0-spz" />
   <project path="vendor/cm" name="spezi77/android_vendor_cm" revision="cm-11.0-mako" >
     <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
   </project>

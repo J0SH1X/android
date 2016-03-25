@@ -4,17 +4,12 @@
 <!-- remove CM repos -->
   <remove-project name="CyanogenMod/android_build" />
   <remove-project name="CyanogenMod/android_bionic" />
-  <remove-project name="CyanogenMod/android_external_flac" />
   <remove-project name="CyanogenMod/android_frameworks_base" />
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
   <remove-project name="CyanogenMod/android_packages_apps_Settings" />
   <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
   <remove-project name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
   <remove-project name="CyanogenMod/android_vendor_cm" />
-  <remove-project name="CyanogenMod/android_system_core" />
-
-<!-- remove AOSP repos -->
-  <remove-project path="cts" name="platform/cts" />
 
 <!-- MAKO device repos -->
 
@@ -32,17 +27,10 @@
   <project path="build" name="spezi77/android_build" groups="pdk" revision="cm-11.0-mako" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="external/flac" name="spezi77/android_external_flac" revision="cm-11.0" />
   <project path="frameworks/base" name="spezi77/android_frameworks_base" revision="cm-11.0-mako" />
   <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" revision="cm-11.0-spz" />
   <project path="vendor/cm" name="spezi77/android_vendor_cm" revision="cm-11.0-mako" >
     <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
   </project>
-  <project path="vendor/cyngn" name="spezi77/android_vendor_cyngn" />
-  <project path="system/core" name="spezi77/android_system_core" revision="cm-11.0" />
-  <project path="cts" name="spezi77/android_cts" revision="cm-11.0" />
-
-  <!-- Use Google GCC 4.8 as kernel target toolchain -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
 
 </manifest>

@@ -9,6 +9,7 @@
   <remove-project name="scotthartbti/platform_system_core" />
   <remove-project name="scotthartbti/android_bionic" />
   <remove-project name="scotthartbti/android_frameworks_base" />
+  <remove-project name="scotthartbti/android_vendor_beanstalk" />
 
 <!-- Remove projects to use my own ones with optimizations -->
   <remove-project name="scotthartbti/android_art" />
@@ -18,6 +19,7 @@
   <remove-project name="CyanogenMod/android_frameworks_support" />
   <remove-project name="CyanogenMod/android_hardware_qcom_display" />
   <remove-project name="CyanogenMod/android_dalvik" />
+  <remove-project name="CyanogenMod/android_system_netd" />
   <remove-project name="platform/external/llvm" />
   <remove-project name="platform/prebuilts/ndk" />
 
@@ -47,6 +49,8 @@
   <project path="frameworks/support" name="spezi77/frameworks_support" remote="github" revision="cm-13.0-mako" />
   <project path="hardware/qcom/display" name="spezi77/android_hardware_qcom_display" remote="github" revision="cm-13.0-mako" />
   <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
+  <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-13.0-mako" />
+  <project path="vendor/beanstalk" name="spezi77/android_vendor_beanstalk" remote="github" revision="bs6-mako" />
 
 <!-- ScrewdAOSP -->
   <project path="frameworks/rs" name="ScrewdAOSP/frameworks_rs" remote="github" revision="m" />

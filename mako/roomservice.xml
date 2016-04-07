@@ -25,9 +25,6 @@
   <remove-project name="platform/external/llvm" />
   <remove-project name="platform/prebuilts/ndk" />
 
-<!-- Drop in order to use patch for Java 8 -->
-  <remove-project name="platform/external/guava" />
-
 <!-- Drop GCC 4.8 to force kernel building with 4.9 -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 
@@ -44,7 +41,6 @@
   </project>
   <project path="bionic" name="spezi77/android_bionic" remote="github" revision="bs6-mako-opt" />
   <project path="dalvik" name="spezi77/dalvik" remote="github" revision="bs6-mako-opt" />
-  <project path="external/guava" name="spezi77/external_guava" remote="github" revision="m" />
   <project path="external/libpng" name="spezi77/android_external_libpng" remote="github" revision="bs6-mako-opt" />
   <project path="frameworks/base" name="spezi77/android_frameworks_base" remote="github" revision="bs6-mako" />
   <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-13.0-mako" />

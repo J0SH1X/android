@@ -15,6 +15,7 @@
   <remove-project name="scotthartbti/android_art" />
   <remove-project name="CyanogenMod/android_frameworks_native" />
   <remove-project name="CyanogenMod/android_external_libpng" />
+  <remove-project name="CyanogenMod/android_frameworks_av" />
   <remove-project name="CyanogenMod/android_frameworks_rs" />
   <remove-project name="CyanogenMod/android_frameworks_support" />
   <remove-project name="CyanogenMod/android_hardware_qcom_display" />
@@ -24,6 +25,7 @@
   <remove-project name="CyanogenMod/android_system_netd" />
   <remove-project name="platform/external/llvm" />
   <remove-project name="platform/prebuilts/ndk" />
+  <remove-project name="platform/external/v8" />
 
 <!-- Drop GCC 4.8 to force kernel building with 4.9 -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
@@ -42,6 +44,7 @@
   <project path="bionic" name="spezi77/android_bionic" remote="github" revision="bs6-mako-opt" />
   <project path="dalvik" name="spezi77/dalvik" remote="github" revision="bs6-mako-opt" />
   <project path="external/libpng" name="spezi77/android_external_libpng" remote="github" revision="bs6-mako-opt" />
+  <project path="frameworks/av" name="spezi77/android_frameworks_av" remote="github" revision="cm-13.0-mako" />
   <project path="frameworks/base" name="spezi77/android_frameworks_base" remote="github" revision="bs6-mako" />
   <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-13.0-mako" />
   <project path="frameworks/support" name="spezi77/frameworks_support" remote="github" revision="cm-13.0-mako" />
@@ -56,6 +59,7 @@
   <project path="frameworks/rs" name="ScrewdAOSP/frameworks_rs" remote="github" revision="m" />
   <project path="external/llvm" name="ScrewdAOSP/external_llvm" remote="github" revision="m" />
   <project path="prebuilts/ndk" name="ScrewdAOSP/prebuilts_ndk" groups="pdk" remote="github" revision="m"/>
+  <project path="external/v8" name="ScrewdAOSP/external_v8" remote="github" revision="m"/>
 
 <!-- add back CM's display-caf -->
   <project path="hardware/qcom/display-caf/apq8084" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-13.0-caf-8084" />

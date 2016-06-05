@@ -22,6 +22,7 @@
   <remove-project name="CyanogenMod/android_hardware_qcom_keymaster" />
   <remove-project name="CyanogenMod/android_hardware_qcom_media" />
   <remove-project name="CyanogenMod/android_dalvik" />
+  <remove-project name="CyanogenMod/android_libcore" />
   <remove-project name="CyanogenMod/android_system_netd" />
   <remove-project name="platform/external/llvm" />
   <remove-project name="platform/prebuilts/ndk" />
@@ -51,6 +52,7 @@
   <project path="hardware/qcom/display" name="spezi77/android_hardware_qcom_display" remote="github" revision="cm-13.0-mako" />
   <project path="hardware/qcom/keymaster" name="spezi77/android_hardware_qcom_keymaster" remote="github" revision="cm-13.0-mako" />
   <project path="hardware/qcom/media/default" name="spezi77/android_hardware_qcom_media" remote="github" revision="cm-13.0-mako" />
+  <project path="libcore" name="spezi77/android_libcore" remote="github" revision="cm-13.0-mako" />
   <project path="system/core" name="spezi77/android_system_core" remote="github" revision="bs6-mako" />
   <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-13.0-mako" />
   <project path="vendor/beanstalk" name="spezi77/android_vendor_beanstalk" remote="github" revision="bs6-mako" />

@@ -90,6 +90,6 @@
   <project name="spezi77/hellspawn-N4" path="kernel/google/msm" remote="github" revision="mm-6.0" />
 
 <!--Dragon TC -->
-  <project groups="pdk,linux" name="dragon-tc/dragontc-3.9" path="prebuilts/clang/linux-x86/host/3.9" remote="bb" revision="master" />
+  <project groups="pdk,linux" name="dragon-tc/dragontc-3.8" path="prebuilts/clang/linux-x86/host/3.8" remote="bb" revision="master" />
 
 </manifest>

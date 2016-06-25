@@ -11,7 +11,7 @@
 <!-- Remove projects to use my own ones with optimizations -->
   <remove-project name="scotthartbti/android_art" />
   <remove-project name="CyanogenMod/android_frameworks_native" />
-  <remove-project name="CyanogenMod/android_external_libpng" />
+  <remove-project name="platform/external/libpng" />
   <remove-project name="CyanogenMod/android_frameworks_av" />
   <remove-project name="CyanogenMod/android_frameworks_rs" />
   <remove-project name="CyanogenMod/android_frameworks_support" />

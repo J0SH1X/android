@@ -4,12 +4,12 @@
 <!-- Remove projects which need device specific changes -->
   <remove-project name="scotthartbti/platform_build" />
   <remove-project name="scotthartbti/platform_system_core" />
-  <remove-project name="scotthartbti/android_bionic" />
+  <remove-project name="CyanogenMod/android_bionic" />
   <remove-project name="scotthartbti/android_frameworks_base" />
   <remove-project name="scotthartbti/android_vendor_beanstalk" />
 
 <!-- Remove projects to use my own ones with optimizations -->
-  <remove-project name="scotthartbti/android_art" />
+  <remove-project name="CyanogenMod/android_art" />
   <remove-project name="CyanogenMod/android_frameworks_native" />
   <remove-project name="platform/external/libpng" />
   <remove-project name="CyanogenMod/android_frameworks_av" />
